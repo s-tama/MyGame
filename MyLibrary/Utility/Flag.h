@@ -21,6 +21,7 @@ namespace MyLibrary
 			/// <returns></returns>
 			bool Check(unsigned char flag)
 			{
+				return ((m_flag & flag) != 0x00) ? true : false;
 			}
 
 			/// <summary>
@@ -29,6 +30,7 @@ namespace MyLibrary
 			/// <param name="flag"></param>
 			void On(unsigned char flag)
 			{
+				m_flag |= flag;
 			}
 
 			/// <summary>
@@ -37,6 +39,7 @@ namespace MyLibrary
 			/// <param name="flag"></param>
 			void Off(unsigned char flag)
 			{
+				m_flag &= ~flag;
 			}
 
 

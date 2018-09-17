@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>962ab2e6-7478-478e-8094-e102dcc66c9d</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dds;dlg;fbx;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{47e1cb5d-9cf6-4195-93b9-d94683380b3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibrary">
+      <UniqueIdentifier>{f77219be-fa4d-4563-8b7e-9340a255dc35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibrary\Framework">
+      <UniqueIdentifier>{a7dcafe4-2e33-4b95-8164-50d3458c0429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibrary\Common">
+      <UniqueIdentifier>{b12a1d60-13c2-4d0a-b15f-f93b5b3f9fbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibrary\Scene">
+      <UniqueIdentifier>{ac98ba34-0080-4c26-b9d7-32d8eaa8c1d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibrary\Utility">
+      <UniqueIdentifier>{85b40430-8cb4-49fe-b2be-286ed5f04d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes">
+      <UniqueIdentifier>{86d19f5b-ce49-4653-81a4-008dc46b70a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibrary\3D">
+      <UniqueIdentifier>{21aa856c-abac-410d-88af-d1cf4c26f8e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibrary\2D">
+      <UniqueIdentifier>{5b0dac6c-5c50-4560-9d37-e796948470fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FBX">
+      <UniqueIdentifier>{85f65b8c-fd92-4fe7-9e8d-d6aef1f0ff59}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLibrary\MyLibrary.h">
+      <Filter>MyLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLibrary\Framework\Framework.h">
+      <Filter>MyLibrary\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLibrary\Common\DeviceResources.h">
+      <Filter>MyLibrary\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLibrary\Common\StepTimer.h">
+      <Filter>MyLibrary\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLibrary\pch.h">
+      <Filter>MyLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLibrary\Scene\SceneManager.h">
+      <Filter>MyLibrary\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLibrary\Utility\Flag.h">
+      <Filter>MyLibrary\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLibrary\Scene\SceneBase.h">
+      <Filter>MyLibrary\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scenes\SampleScene.h">
+      <Filter>Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLibrary\3D\Sphere.h">
+      <Filter>MyLibrary\3D</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\Framework\Framework.cpp">
+      <Filter>MyLibrary\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\Common\DeviceResources.cpp">
+      <Filter>MyLibrary\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\pch.cpp">
+      <Filter>MyLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\Scene\SceneManager.cpp">
+      <Filter>MyLibrary\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\Scene\SceneBase.cpp">
+      <Filter>MyLibrary\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scenes\SampleScene.cpp">
+      <Filter>Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\3D\Sphere.cpp">
+      <Filter>MyLibrary\3D</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="directx.ico">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="settings.manifest">
+      <Filter>Assets</Filter>
+    </Manifest>
+  </ItemGroup>
+</Project>

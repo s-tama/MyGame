@@ -2,6 +2,7 @@
 // Component.cpp
 //
 
+#include "../pch.h"
 #include "Component.h"
 
 using namespace MyLibrary;

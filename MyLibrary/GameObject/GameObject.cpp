@@ -11,6 +11,7 @@ using namespace MyLibrary;
 /// </summary>
 GameObject::GameObject()
 {
+	m_pTransform = new Transform();
 }
 
 /// <summary>

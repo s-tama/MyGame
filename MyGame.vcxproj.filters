@@ -41,6 +41,9 @@
     <Filter Include="MyLibrary\Node">
       <UniqueIdentifier>{d0d28350-393f-4cc4-80c2-64d49d0ae60d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyLibrary\GameObject">
+      <UniqueIdentifier>{3b175e6b-7d82-4619-994b-7ed42c8bd38f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game\Game.h">
@@ -85,6 +88,9 @@
     <ClInclude Include="MyLibrary\Node\Node.h">
       <Filter>MyLibrary\Node</Filter>
     </ClInclude>
+    <ClInclude Include="MyLibrary\GameObject\GameObject.h">
+      <Filter>MyLibrary\GameObject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
@@ -120,6 +126,9 @@
     </ClCompile>
     <ClCompile Include="MyLibrary\Node\Node.cpp">
       <Filter>MyLibrary\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\GameObject\GameObject.cpp">
+      <Filter>MyLibrary\GameObject</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -170,6 +170,7 @@
     <ClInclude Include="MyLibrary\Component\Component.h" />
     <ClInclude Include="MyLibrary\Component\Transform.h" />
     <ClInclude Include="MyLibrary\Framework\Framework.h" />
+    <ClInclude Include="MyLibrary\GameObject\GameObject.h" />
     <ClInclude Include="MyLibrary\MyLibrary.h" />
     <ClInclude Include="MyLibrary\Node\Node.h" />
     <ClInclude Include="MyLibrary\pch.h" />
@@ -186,6 +187,7 @@
     <ClCompile Include="MyLibrary\Component\Component.cpp" />
     <ClCompile Include="MyLibrary\Component\Transform.cpp" />
     <ClCompile Include="MyLibrary\Framework\Framework.cpp" />
+    <ClCompile Include="MyLibrary\GameObject\GameObject.cpp" />
     <ClCompile Include="MyLibrary\Node\Node.cpp" />
     <ClCompile Include="MyLibrary\pch.cpp" />
     <ClCompile Include="MyLibrary\Scene\SceneBase.cpp" />

@@ -41,7 +41,10 @@ void Node::UpdateAll(float elapsedTime)
 	// 子を更新
 	for (auto children : m_pChildren)
 	{
-		children->UpdateAll(elapsedTime);
+		if (children != nullptr)
+		{
+			children->UpdateAll(elapsedTime);
+		}
 	}
 }
 
@@ -56,7 +59,10 @@ void Node::DrawAll()
 	// 子を描画
 	for (auto children : m_pChildren)
 	{
-		children->Draw();
+		if (children != nullptr)
+		{
+			children->Draw();
+		}
 	}
 }
 

@@ -31,6 +31,12 @@ private:
 	// 描画処理
 	void Render();
 
+
+private:
+
 	// シーンマネージャー
 	std::unique_ptr<MyLibrary::Scene::SceneManager> m_pSceneManager;
+
+	// ノード
+	std::unique_ptr<MyLibrary::Node> m_pNode;
 };

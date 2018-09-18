@@ -25,7 +25,7 @@ namespace MyLibrary
 
 		// コンポーネントを取得
 		template <typename T>
-		T GetComponent(T component) { return component; }
+		T GetComponent(Component* component) { return component; }
 
 
 	private:

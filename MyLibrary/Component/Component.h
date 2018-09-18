@@ -10,6 +10,12 @@ namespace MyLibrary
 	/// </summary>
 	class Component
 	{
-		
+	public:
+
+		// コンストラクタ
+		Component();
+
+		// 仮想デストラクタ
+		virtual ~Component();
 	};
 }

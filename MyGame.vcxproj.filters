@@ -35,6 +35,12 @@
     <Filter Include="FBX">
       <UniqueIdentifier>{85f65b8c-fd92-4fe7-9e8d-d6aef1f0ff59}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyLibrary\Component">
+      <UniqueIdentifier>{87022570-0900-4527-839b-af4c37f67db2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyLibrary\Node">
+      <UniqueIdentifier>{d0d28350-393f-4cc4-80c2-64d49d0ae60d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game\Game.h">
@@ -70,6 +76,15 @@
     <ClInclude Include="MyLibrary\3D\Sphere.h">
       <Filter>MyLibrary\3D</Filter>
     </ClInclude>
+    <ClInclude Include="MyLibrary\Component\Transform.h">
+      <Filter>MyLibrary\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLibrary\Component\Component.h">
+      <Filter>MyLibrary\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLibrary\Node\Node.h">
+      <Filter>MyLibrary\Node</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
@@ -96,6 +111,15 @@
     </ClCompile>
     <ClCompile Include="MyLibrary\3D\Sphere.cpp">
       <Filter>MyLibrary\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\Component\Transform.cpp">
+      <Filter>MyLibrary\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\Component\Component.cpp">
+      <Filter>MyLibrary\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\Node\Node.cpp">
+      <Filter>MyLibrary\Node</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

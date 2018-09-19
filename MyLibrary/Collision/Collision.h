@@ -3,6 +3,8 @@
 //
 #pragma once
 
+#include "../Utility/Flag.h"
+
 namespace MyLibrary
 {
 	// ƒNƒ‰ƒXéŒ¾
@@ -21,8 +23,5 @@ namespace MyLibrary
 
 		// ‹…‚Æ‹…‚Ì“–‚½‚è”»’è
 		static void Sphere2Sphere(SphereCollider* sphere1, SphereCollider* sphere2);
-
-
-	private:
 	};
 }

@@ -10,6 +10,7 @@
 
 using namespace MyLibrary;
 using namespace DirectX::SimpleMath;
+using namespace Utility;
 
 /// <summary>
 /// コンストラクタ
@@ -25,22 +26,42 @@ MyLibrary::Collision::Collision()
 /// <param name="sphere2"></param>
 void Collision::Sphere2Sphere(SphereCollider* sphere1, SphereCollider* sphere2)
 {
-	if (sphere1 && sphere2)
+	float dx = sphere1->GetTransform()->GetPosition().x - sphere2->GetTransform()->GetPosition().x;
+	float dy = sphere1->GetTransform()->GetPosition().y - sphere2->GetTransform()->GetPosition().y;
+	float dz = sphere1->GetTransform()->GetPosition().z - sphere2->GetTransform()->GetPosition().z;
+	float d = sphere1->GetRadius() + sphere2->GetRadius();
+
+	float dx2 = dx * dx;
+	float dy2 = dy * dy;
+	float dz2 = dz * dz;
+	float d2 = d*d;
+
+	static bool currentHit;
+	static bool lastHit;
+
+	lastHit = currentHit;
+	currentHit = dx2 + dy2 + dz2 <= d2;
+
+	if (currentHit)
 	{
-		float dx = sphere1->GetTransform()->GetPosition().x - sphere2->GetTransform()->GetPosition().x;
-		float dy = sphere1->GetTransform()->GetPosition().y - sphere2->GetTransform()->GetPosition().y;
-		float dz = sphere1->GetTransform()->GetPosition().z - sphere2->GetTransform()->GetPosition().z;
-		float d = sphere1->GetRadius() + sphere2->GetRadius();
+		// 当たっている間
+		sphere1->GetGameObject()->OnCollisionStay(sphere2);
+	}
 
-		float dx2 = dx * dx;
-		float dy2 = dy * dy;
-		float dz2 = dz * dz;
-		float d2 = d*d;
-
-		if (dx2 + dy2 + dz2 <= d2)
+	if (!lastHit)
+	{
+		if (currentHit)
 		{
-			// 当たり判定を実行
-			sphere1->GetGameObject()->OnCollisionStay(sphere2);
+			// 当たった瞬間
+			sphere1->GetGameObject()->OnCollisionEnter(sphere2);
+		}
+	}
+	else
+	{
+		if (!currentHit)
+		{
+			// 離れた瞬間
+			sphere1->GetGameObject()->OnCollisionExit(sphere2);
 		}
 	}
 }

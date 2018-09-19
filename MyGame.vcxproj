@@ -171,6 +171,7 @@
     <ClInclude Include="MyLibrary\Component\BoxCollider.h" />
     <ClInclude Include="MyLibrary\Component\Collider.h" />
     <ClInclude Include="MyLibrary\Component\Component.h" />
+    <ClInclude Include="MyLibrary\Component\Rigidbody.h" />
     <ClInclude Include="MyLibrary\Component\SphereCollider.h" />
     <ClInclude Include="MyLibrary\Component\Transform.h" />
     <ClInclude Include="MyLibrary\Framework\Framework.h" />
@@ -192,6 +193,7 @@
     <ClCompile Include="MyLibrary\Component\BoxCollider.cpp" />
     <ClCompile Include="MyLibrary\Component\Collider.cpp" />
     <ClCompile Include="MyLibrary\Component\Component.cpp" />
+    <ClCompile Include="MyLibrary\Component\Rigidbody.cpp" />
     <ClCompile Include="MyLibrary\Component\SphereCollider.cpp" />
     <ClCompile Include="MyLibrary\Component\Transform.cpp" />
     <ClCompile Include="MyLibrary\Framework\Framework.cpp" />

@@ -106,6 +106,9 @@
     <ClInclude Include="MyLibrary\Collision\Collision.h">
       <Filter>MyLibrary\Collision</Filter>
     </ClInclude>
+    <ClInclude Include="MyLibrary\Component\Rigidbody.h">
+      <Filter>MyLibrary\Component</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
@@ -156,6 +159,9 @@
     </ClCompile>
     <ClCompile Include="MyLibrary\Collision\Collision.cpp">
       <Filter>MyLibrary\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\Component\Rigidbody.cpp">
+      <Filter>MyLibrary\Component</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

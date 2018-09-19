@@ -1,9 +1,0 @@
-﻿  Sphere.cpp
-  Main.cpp
-  SampleScene.cpp
-  Game.cpp
-  コードを生成中...
-  LINK : 前回のインクリメンタル リンクで C:\Users\s172240\Desktop\MyGame\Debug\MyGame.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
-     ライブラリ C:\Users\s172240\Desktop\MyGame\Debug\MyGame.lib とオブジェクト C:\Users\s172240\Desktop\MyGame\Debug\MyGame.exp を作成中
-  MyGame.vcxproj -> C:\Users\s172240\Desktop\MyGame\Debug\MyGame.exe
-  MyGame.vcxproj -> C:\Users\s172240\Desktop\MyGame\Debug\MyGame.pdb (Full PDB)

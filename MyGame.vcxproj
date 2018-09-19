@@ -169,6 +169,7 @@
     <ClInclude Include="MyLibrary\Common\StepTimer.h" />
     <ClInclude Include="MyLibrary\Component\Collider.h" />
     <ClInclude Include="MyLibrary\Component\Component.h" />
+    <ClInclude Include="MyLibrary\Component\SphereCollider.h" />
     <ClInclude Include="MyLibrary\Component\Transform.h" />
     <ClInclude Include="MyLibrary\Framework\Framework.h" />
     <ClInclude Include="MyLibrary\GameObject\GameObject.h" />
@@ -187,6 +188,7 @@
     <ClCompile Include="MyLibrary\Common\DeviceResources.cpp" />
     <ClCompile Include="MyLibrary\Component\Collider.cpp" />
     <ClCompile Include="MyLibrary\Component\Component.cpp" />
+    <ClCompile Include="MyLibrary\Component\SphereCollider.cpp" />
     <ClCompile Include="MyLibrary\Component\Transform.cpp" />
     <ClCompile Include="MyLibrary\Framework\Framework.cpp" />
     <ClCompile Include="MyLibrary\GameObject\GameObject.cpp" />

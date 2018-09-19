@@ -4,6 +4,11 @@
 
 #include "Node.h"
 
+#include "../GameObject/GameObject.h"
+#include "../Collision/Collision.h"
+#include "../Component/SphereCollider.h"
+#include "../Component/Transform.h"
+
 using namespace MyLibrary;
 
 /// <summary>

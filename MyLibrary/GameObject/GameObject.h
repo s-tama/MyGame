@@ -30,9 +30,9 @@ namespace MyLibrary
 		virtual ~GameObject();
 
 		// ìñÇΩÇ¡ÇƒÇ¢ÇÈä‘
-		virtual void OnCollisionStay(Collider* collision){}
+		virtual void OnCollisionStay(Collider* collider){}
 		// ìñÇΩÇ¡ÇΩèuä‘
-		virtual void OnCollisionEnter(Collider* collision){}
+		virtual void OnCollisionEnter(Collider* collider){}
 		// ó£ÇÍÇΩéû
 		virtual void OnCollisionExit(Collider* collision){}
 

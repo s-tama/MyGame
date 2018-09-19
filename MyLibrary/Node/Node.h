@@ -7,6 +7,9 @@
 
 namespace MyLibrary
 {
+	// クラス宣言
+	class GameObject;
+
 	/// <summary>
 	/// ゲームオブジェクト管理ノードクラス
 	/// </summary>

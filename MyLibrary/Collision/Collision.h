@@ -5,6 +5,10 @@
 
 namespace MyLibrary
 {
+	// クラス宣言
+	class SphereCollider;
+	class GameObject;
+
 	/// <summary>
 	/// 当たり判定クラス
 	/// </summary>
@@ -14,6 +18,9 @@ namespace MyLibrary
 
 		// コンストラクタ
 		Collision();
+
+		// 球と球の当たり判定
+		static void Sphere2Sphere(SphereCollider* sphere1, SphereCollider* sphere2);
 
 
 	private:

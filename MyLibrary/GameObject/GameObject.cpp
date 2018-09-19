@@ -10,8 +10,18 @@ using namespace MyLibrary;
 /// コンストラクタ
 /// </summary>
 GameObject::GameObject()
+	: m_tag(NULL)
 {
 	m_pTransform = new Transform();
+}
+
+/// <summary>
+/// コピーコンストラクタ
+/// </summary>
+/// <param name="tag"></param>
+GameObject::GameObject(std::string tag)
+	: m_tag(tag)
+{
 }
 
 /// <summary>

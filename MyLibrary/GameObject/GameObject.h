@@ -3,6 +3,7 @@
 //
 #pragma once
 
+#include <string>
 #include <vector>
 
 #include "../Node/Node.h"
@@ -20,6 +21,8 @@ namespace MyLibrary
 
 		// コンストラクタ
 		GameObject();
+		// コピーコンストラクタ
+		GameObject(std::string tag);
 
 		// 仮想デストラクタ
 		virtual ~GameObject();
@@ -52,6 +55,12 @@ namespace MyLibrary
 		// トランスフォームを取得
 		Transform* GetTransform() { return m_pTransform; }
 
+		// ゲームオブジェクトの取得
+		GameObject* GetGameObject() { return m_gameObject; }
+
+		// タグ名の取得
+		std::string GetTag() { return m_tag; }
+
 
 	protected:
 
@@ -60,5 +69,11 @@ namespace MyLibrary
 
 		// トランスフォーム
 		Transform* m_pTransform;
+
+		// タグ
+		std::string m_tag;
+
+		// 自己参照
+		GameObject* m_gameObject;
 	};
 }

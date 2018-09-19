@@ -32,7 +32,6 @@ namespace MyLibrary
 		
 	private:
 
-		// 自身の更新処理
 		virtual void Update(float elapsedTime);
 
 		// 自身の描画処理

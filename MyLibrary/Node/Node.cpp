@@ -4,6 +4,7 @@
 
 #include "Node.h"
 
+
 using namespace MyLibrary;
 
 /// <summary>
@@ -41,7 +42,6 @@ void Node::UpdateAll(float elapsedTime)
 	// 子を更新
 	for (auto children : m_pChildren)
 	{
-		children->UpdateAll(elapsedTime);
 	}
 }
 
@@ -56,7 +56,6 @@ void Node::DrawAll()
 	// 子を描画
 	for (auto children : m_pChildren)
 	{
-		children->Draw();
 	}
 }
 

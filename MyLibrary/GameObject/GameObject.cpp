@@ -22,6 +22,7 @@ GameObject::GameObject()
 GameObject::GameObject(std::string tag)
 	: m_tag(tag)
 {
+	m_pTransform = new Transform();
 }
 
 /// <summary>

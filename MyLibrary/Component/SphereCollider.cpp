@@ -2,8 +2,9 @@
 // SphereCollider.cpp
 //
 
-#include "../pch.h"
 #include "SphereCollider.h"
+
+#include "../GameObject/GameObject.h"
 
 using namespace MyLibrary;
 using namespace DirectX::SimpleMath;

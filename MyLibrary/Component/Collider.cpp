@@ -4,6 +4,8 @@
 
 #include "Collider.h"
 
+#include "../GameObject/GameObject.h"
+
 using namespace MyLibrary;
 
 /// <summary>

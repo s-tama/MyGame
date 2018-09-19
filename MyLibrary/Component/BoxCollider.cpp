@@ -2,8 +2,9 @@
 // BoxCollider.cpp
 //
 
-#include "../pch.h"
 #include "BoxCollider.h"
+
+#include "../GameObject/GameObject.h"
 
 using namespace MyLibrary;
 using namespace DirectX::SimpleMath;

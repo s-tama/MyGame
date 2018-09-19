@@ -9,6 +9,8 @@
 #include "../Node/Node.h"
 #include "../Component/Component.h"
 #include "../Component/Transform.h"
+#include "../Collision/Collision.h"
+#include "../Component/Collider.h"
 
 namespace MyLibrary
 {
@@ -27,13 +29,21 @@ namespace MyLibrary
 		// 仮想デストラクタ
 		virtual ~GameObject();
 
+		// 当たっている間
+		virtual void OnCollisionStay(Collider* collision){}
+		// 当たった瞬間
+		virtual void OnCollisionEnter(Collider* collision){}
+		// 離れた時
+		virtual void OnCollisionExit(Collider* collision){}
+
 		// コンポネントを追加
 		template <typename T>
-		T* AddComponent()
+		void AddComponent()
 		{
-			T* component = new T();
+			Component* component = new T();
+			component->SetGameObject(this);
+			component->SetTransform(m_pTransform);
 			m_pComponents.push_back(component);
-			return component;
 		}
 
 		// コンポーネントを取得
@@ -56,12 +66,12 @@ namespace MyLibrary
 		Transform* GetTransform() { return m_pTransform; }
 
 		// ゲームオブジェクトの取得
-		GameObject* GetGameObject() { return m_gameObject; }
+		GameObject* GetGameObject() { return m_pGameObject; }
 
 		// タグ名の取得
 		std::string GetTag() { return m_tag; }
 
-
+		
 	protected:
 
 		// コンポーネントリスト
@@ -74,6 +84,6 @@ namespace MyLibrary
 		std::string m_tag;
 
 		// 自己参照
-		GameObject* m_gameObject;
+		GameObject* m_pGameObject;
 	};
 }

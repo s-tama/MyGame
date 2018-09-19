@@ -44,6 +44,9 @@
     <Filter Include="MyLibrary\GameObject">
       <UniqueIdentifier>{3b175e6b-7d82-4619-994b-7ed42c8bd38f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MyLibrary\Collision">
+      <UniqueIdentifier>{81a0b319-d583-4e39-8f15-d701f59c3c4a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game\Game.h">
@@ -100,6 +103,9 @@
     <ClInclude Include="MyLibrary\Component\BoxCollider.h">
       <Filter>MyLibrary\Component</Filter>
     </ClInclude>
+    <ClInclude Include="MyLibrary\Collision\Collision.h">
+      <Filter>MyLibrary\Collision</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
@@ -147,6 +153,9 @@
     </ClCompile>
     <ClCompile Include="MyLibrary\Component\BoxCollider.cpp">
       <Filter>MyLibrary\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\Collision\Collision.cpp">
+      <Filter>MyLibrary\Collision</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

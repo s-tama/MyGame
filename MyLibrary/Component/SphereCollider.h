@@ -3,6 +3,7 @@
 //
 #pragma once
 
+#include "../pch.h"
 #include "Collider.h"
 
 namespace MyLibrary

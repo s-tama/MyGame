@@ -30,6 +30,21 @@ void Node::AddChild(Node* pNode)
 }
 
 /// <summary>
+/// 全て初期化
+/// </summary>
+void MyLibrary::Node::InitializeAll()
+{
+	// 自身の初期化
+	Initialize();
+
+	// 子を初期化
+	for (auto children : m_pChildren)
+	{
+		children->InitializeAll();
+	}
+}
+
+/// <summary>
 /// 全てを更新
 /// </summary>
 /// <param name="elapsedTime"></param>
@@ -64,6 +79,14 @@ void Node::DrawAll()
 			children->Draw();
 		}
 	}
+}
+
+/// <summary>
+/// 自身の初期化処理
+/// </summary>
+void MyLibrary::Node::Initialize()
+{
+	;
 }
 
 /// <summary>

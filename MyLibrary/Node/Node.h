@@ -23,6 +23,9 @@ namespace MyLibrary
 		// 子を追加
 		void AddChild(Node* pNode);
 
+		// 全てを初期化する
+		void InitializeAll();
+
 		// 全てを更新する
 		void UpdateAll(float elapsedTime);
 
@@ -31,6 +34,9 @@ namespace MyLibrary
 
 		
 	private:
+
+		// 自身の更新処理
+		virtual void Initialize();
 
 		// 自身の更新処理
 		virtual void Update(float elapsedTime);

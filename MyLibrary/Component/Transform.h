@@ -21,6 +21,10 @@ namespace MyLibrary
 		// デストラクタ
 		~Transform();
 
+		// 移動
+		void Translate(DirectX::SimpleMath::Vector3 translate);
+		void Translate(float x, float y, float z);
+
 		// ワールド行列の取得
 		DirectX::SimpleMath::Matrix GetWorld() { return m_world; }
 		// ワールド行列の設定

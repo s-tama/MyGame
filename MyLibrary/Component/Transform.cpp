@@ -24,3 +24,25 @@ Transform::Transform()
 Transform::~Transform()
 {
 }
+
+/// <summary>
+/// ˆÚ“®
+/// </summary>
+/// <param name="translate"></param>
+void Transform::Translate(Vector3 translate)
+{
+	m_position += translate;
+}
+
+/// <summary>
+/// ˆÚ“®
+/// </summary>
+/// <param name="x"></param>
+/// <param name="y"></param>
+/// <param name="z"></param>
+void Transform::Translate(float x, float y, float z)
+{
+	m_position.x += x;
+	m_position.y += y;
+	m_position.z += z;
+}

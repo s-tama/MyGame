@@ -54,9 +54,9 @@ namespace MyLibrary
 		{
 			for (auto components : m_pComponents)
 			{
-				if (dynamic_cast<T>(*components))
+				if (dynamic_cast<T*>(components))
 				{
-					return (T*)m_pComponents;
+					return (T*)components;
 				}
 			}
 			return nullptr;

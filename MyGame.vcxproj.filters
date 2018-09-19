@@ -91,6 +91,9 @@
     <ClInclude Include="MyLibrary\GameObject\GameObject.h">
       <Filter>MyLibrary\GameObject</Filter>
     </ClInclude>
+    <ClInclude Include="MyLibrary\Component\Collider.h">
+      <Filter>MyLibrary\Component</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
@@ -129,6 +132,9 @@
     </ClCompile>
     <ClCompile Include="MyLibrary\GameObject\GameObject.cpp">
       <Filter>MyLibrary\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\Component\Collider.cpp">
+      <Filter>MyLibrary\Component</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

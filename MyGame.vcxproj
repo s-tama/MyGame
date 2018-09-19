@@ -167,6 +167,7 @@
     <ClInclude Include="MyLibrary\3D\Sphere.h" />
     <ClInclude Include="MyLibrary\Common\DeviceResources.h" />
     <ClInclude Include="MyLibrary\Common\StepTimer.h" />
+    <ClInclude Include="MyLibrary\Component\BoxCollider.h" />
     <ClInclude Include="MyLibrary\Component\Collider.h" />
     <ClInclude Include="MyLibrary\Component\Component.h" />
     <ClInclude Include="MyLibrary\Component\SphereCollider.h" />
@@ -186,6 +187,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MyLibrary\3D\Sphere.cpp" />
     <ClCompile Include="MyLibrary\Common\DeviceResources.cpp" />
+    <ClCompile Include="MyLibrary\Component\BoxCollider.cpp" />
     <ClCompile Include="MyLibrary\Component\Collider.cpp" />
     <ClCompile Include="MyLibrary\Component\Component.cpp" />
     <ClCompile Include="MyLibrary\Component\SphereCollider.cpp" />

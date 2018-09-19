@@ -97,6 +97,9 @@
     <ClInclude Include="MyLibrary\Component\SphereCollider.h">
       <Filter>MyLibrary\Component</Filter>
     </ClInclude>
+    <ClInclude Include="MyLibrary\Component\BoxCollider.h">
+      <Filter>MyLibrary\Component</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
@@ -140,6 +143,9 @@
       <Filter>MyLibrary\Component</Filter>
     </ClCompile>
     <ClCompile Include="MyLibrary\Component\SphereCollider.cpp">
+      <Filter>MyLibrary\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLibrary\Component\BoxCollider.cpp">
       <Filter>MyLibrary\Component</Filter>
     </ClCompile>
   </ItemGroup>

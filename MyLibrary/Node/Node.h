@@ -26,13 +26,13 @@ namespace MyLibrary
 		// 子を追加
 		void AddChild(Node* pNode);
 
-		// 全てを初期化する
+		// 初期化する
 		void InitializeAll();
 
-		// 全てを更新する
+		// 更新する
 		void UpdateAll(float elapsedTime);
 
-		// 全て描画する
+		// 描画する
 		void DrawAll();
 
 		

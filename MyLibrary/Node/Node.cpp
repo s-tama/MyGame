@@ -65,6 +65,7 @@ void Node::UpdateAll(float elapsedTime)
 		{
 			children->UpdateAll(elapsedTime);
 
+			// ‹…‚Æ‹…‚Ì“–‚½‚è”»’è
 			Collision::Sphere2Sphere(dynamic_cast<GameObject*>(this)->GetComponent<SphereCollider>(),
 				dynamic_cast<GameObject*>(children)->GetComponent<SphereCollider>());
 		}

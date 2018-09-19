@@ -23,15 +23,22 @@ namespace MyLibrary
 		// 子を追加
 		void AddChild(Node* pNode);
 
-		// 全てを更新する
+		// 初期化する
+		void InitializeAll();
+
+		// 更新する
 		void UpdateAll(float elapsedTime);
 
-		// 全て描画する
+		// 描画する
 		void DrawAll();
 
 		
 	private:
 
+		// 自身の初期化処理
+		virtual void Initialize();
+
+		// 自身の更新処理
 		virtual void Update(float elapsedTime);
 
 		// 自身の描画処理

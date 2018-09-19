@@ -17,6 +17,8 @@
 
 #include "Component\Component.h"
 #include "Component\Transform.h"
+#include "Component\SphereCollider.h"
+#include "Component\Rigidbody.h"
 
 #include "GameObject\GameObject.h"
 

@@ -11,6 +11,8 @@
 #include "../Component/Transform.h"
 #include "../Collision/Collision.h"
 #include "../Component/Collider.h"
+#include "../Component/Rigidbody.h"
+#include "../Component/SphereCollider.h"
 
 namespace MyLibrary
 {

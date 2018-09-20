@@ -26,9 +26,9 @@ MyLibrary::Collision::Collision()
 /// <param name="sphere2"></param>
 void Collision::Sphere2Sphere(SphereCollider* sphere1, SphereCollider* sphere2)
 {
-	float dx = sphere1->GetTransform()->GetPosition().x - sphere2->GetTransform()->GetPosition().x;
-	float dy = sphere1->GetTransform()->GetPosition().y - sphere2->GetTransform()->GetPosition().y;
-	float dz = sphere1->GetTransform()->GetPosition().z - sphere2->GetTransform()->GetPosition().z;
+	float dx = sphere1->GetGameObject()->GetTransform()->GetPosition().x - sphere2->GetGameObject()->GetTransform()->GetPosition().x;
+	float dy = sphere1->GetGameObject()->GetTransform()->GetPosition().y - sphere2->GetGameObject()->GetTransform()->GetPosition().y;
+	float dz = sphere1->GetGameObject()->GetTransform()->GetPosition().z - sphere2->GetGameObject()->GetTransform()->GetPosition().z;
 	float d = sphere1->GetRadius() + sphere2->GetRadius();
 
 	float dx2 = dx * dx;

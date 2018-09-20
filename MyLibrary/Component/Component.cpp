@@ -14,6 +14,7 @@ using namespace MyLibrary;
 /// コンストラクタ
 /// </summary>
 Component::Component()
+	: m_pGameObject(nullptr), m_pTransform(nullptr)
 {
 }
 
@@ -46,7 +47,7 @@ void Component::SetGameObject(GameObject* pGameObject)
 /// トランスフォームの取得
 /// </summary>
 /// <returns></returns>
-Transform * MyLibrary::Component::GetTransform()
+Transform* Component::GetTransform()
 {
 	return m_pTransform;
 }

@@ -76,16 +76,16 @@ namespace MyLibrary
 		
 	protected:
 
-		// コンポーネントリスト
-		std::vector<Component*> m_pComponents;
-
-		// トランスフォーム
-		Transform* m_pTransform;
-
 		// タグ
 		std::string m_tag;
 
 		// 自己参照
 		GameObject* m_pGameObject;
+
+		// トランスフォーム
+		Transform* m_pTransform;
+
+		// コンポーネントリスト
+		std::vector<Component*> m_pComponents;
 	};
 }

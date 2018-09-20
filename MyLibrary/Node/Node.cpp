@@ -70,6 +70,10 @@ void Node::UpdateAll(float elapsedTime)
 		if (children != nullptr)
 		{
 			children->UpdateAll(elapsedTime);
+
+			// ‹…‚Æ‹…‚Ì“–‚½‚è”»’è
+			Collision::Sphere2Sphere(dynamic_cast<GameObject*>(children)->GetComponent<SphereCollider>(),
+				dynamic_cast<GameObject*>(children)->GetComponent<SphereCollider>());
 		}
 	}
 }

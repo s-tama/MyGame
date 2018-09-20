@@ -10,7 +10,7 @@ using namespace MyLibrary;
 /// コンストラクタ
 /// </summary>
 GameObject::GameObject()
-	: m_tag(NULL)
+	: m_tag(NULL), m_pGameObject(this), m_pTransform(nullptr)
 {
 	m_pTransform = new Transform();
 }
@@ -20,7 +20,7 @@ GameObject::GameObject()
 /// </summary>
 /// <param name="tag"></param>
 GameObject::GameObject(std::string tag)
-	: m_tag(tag)
+	: m_tag(tag), m_pGameObject(this), m_pTransform(nullptr)
 {
 	m_pTransform = new Transform();
 }

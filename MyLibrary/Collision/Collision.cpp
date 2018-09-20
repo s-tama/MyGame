@@ -26,6 +26,9 @@ MyLibrary::Collision::Collision()
 /// <param name="sphere2"></param>
 void Collision::Sphere2Sphere(SphereCollider* sphere1, SphereCollider* sphere2)
 {
+	static bool currentHit;		// Œ»Ý“–‚½‚Á‚Ä‚¢‚é‚©
+	static bool lastHit;		// 1ƒtƒŒ[ƒ€‘O“–‚½‚Á‚Ä‚½‚©
+
 	float dx = sphere1->GetGameObject()->GetTransform()->GetPosition().x - sphere2->GetGameObject()->GetTransform()->GetPosition().x;
 	float dy = sphere1->GetGameObject()->GetTransform()->GetPosition().y - sphere2->GetGameObject()->GetTransform()->GetPosition().y;
 	float dz = sphere1->GetGameObject()->GetTransform()->GetPosition().z - sphere2->GetGameObject()->GetTransform()->GetPosition().z;
@@ -35,9 +38,6 @@ void Collision::Sphere2Sphere(SphereCollider* sphere1, SphereCollider* sphere2)
 	float dy2 = dy * dy;
 	float dz2 = dz * dz;
 	float d2 = d*d;
-
-	static bool currentHit;
-	static bool lastHit;
 
 	lastHit = currentHit;
 	currentHit = dx2 + dy2 + dz2 <= d2;

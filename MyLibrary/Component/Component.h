@@ -35,10 +35,10 @@ namespace MyLibrary
 
 	protected:
 
-		// トランスフォームへのポインタ
-		Transform* m_pTransform;
-
 		// ゲームオブジェクトへのポインタ
 		GameObject* m_pGameObject;
+
+		// トランスフォームへのポインタ
+		Transform* m_pTransform;
 	};
 }

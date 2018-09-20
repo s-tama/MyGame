@@ -42,21 +42,3 @@ void Component::SetGameObject(GameObject* pGameObject)
 {
 	m_pGameObject = pGameObject;
 }
-
-/// <summary>
-/// トランスフォームの取得
-/// </summary>
-/// <returns></returns>
-Transform* Component::GetTransform()
-{
-	return m_pTransform;
-}
-
-/// <summary>
-/// トランスフォームの設定
-/// </summary>
-/// <param name="pTransform"></param>
-void Component::SetTransform(Transform* pTransform)
-{
-	m_pTransform = pTransform;
-}

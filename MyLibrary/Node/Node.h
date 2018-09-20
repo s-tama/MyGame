@@ -22,6 +22,8 @@ namespace MyLibrary
 
 		// 子を追加
 		void AddChild(Node* pNode);
+		// 子のリストを取得
+		std::list<Node*> GetChildren();
 
 		// 初期化する
 		void InitializeAll();

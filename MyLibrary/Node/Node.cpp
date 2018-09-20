@@ -4,9 +4,7 @@
 
 #include "Node.h"
 
-#include "../Collision/Collision.h"
 #include "../GameObject/GameObject.h"
-#include "../Component/SphereCollider.h"
 
 using namespace MyLibrary;
 
@@ -31,6 +29,15 @@ Node::~Node()
 void Node::AddChild(Node* pNode)
 {
 	m_pChildren.push_back(pNode);
+}
+
+/// <summary>
+/// Žq‚ÌƒŠƒXƒg‚ðŽæ“¾
+/// </summary>
+/// <returns></returns>
+std::list<Node*> Node::GetChildren()
+{
+	return m_pChildren;
 }
 
 /// <summary>
@@ -63,10 +70,6 @@ void Node::UpdateAll(float elapsedTime)
 		if (children != nullptr)
 		{
 			children->UpdateAll(elapsedTime);
-
-			// ‹…‚Æ‹…‚Ì“–‚½‚è”»’è
-			Collision::Sphere2Sphere(dynamic_cast<GameObject*>(this)->GetComponent<SphereCollider>(),
-				dynamic_cast<GameObject*>(children)->GetComponent<SphereCollider>());
 		}
 	}
 }
